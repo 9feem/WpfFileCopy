@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfFileCopy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfFileCopy"
+        mc:Ignorable="d"
+        FontSize="18"
+        Title="MainWindow" Height="720" Width="1280">
+    <Grid>
+        <Label Content="@lutfee" />
+        <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center" Width="450">
+            <Label Content="โปรแกรมคัดลอกไฟล์" FontSize="31" Margin="50"/>
+            <Button Content="เลือกไฟล์" Height="39" Click="SelectFile_Click" Margin="0,0,0,10"/>
+            <TextBlock Name="FilePathText" Text="ยังไม่ได้เลือกไฟล์" Margin="0,0,0,10"/>
+
+            <TextBox Padding="3"  Name="RepeatCountTextBox"  Margin="0,0,0,10"/>
+
+            <Button Content="เริ่ม Copy ไฟล์" Height="50" Click="CopyFile_Click" Margin="0,0,0,10"/>
+            <TextBlock Name="ResultText"/>
+        </StackPanel>
+    </Grid>
+</Window>
